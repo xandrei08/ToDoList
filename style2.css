@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Glory', sans-serif;
+    /* background-color:black; */
+    background-color: #9f9f9f;
+}
+.mainContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h1{
+    text-align: center;
+}
+.main-list{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    width: 50rem;
+    border:5px solid lightblue;
+    margin-left:6%;
+}
+.notes-container{
+    width:37.5rem;
+    height: auto;
+}
+.header-list{
+    display:flex;
+    flex-direction: row;
+    width:50rem;
+    justify-content: space-around;
+}
+.header-list2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:15px;
+}
+nav{
+    padding-left:7%;
+}
+
+.week-input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    height:32px;
+   padding-top:17px;
+}
+.week-input:focus{
+    border:none;
+    outline:none;
+}
+.week-days{
+    display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width:49.5rem;
+   border-top:2px solid lightblue;
+}
+.left-container{
+    width: 25rem;
+    height: 50rem;
+   border:2px solid lightblue;
+}
+.right-container{
+    width:25rem;
+    height: 50rem;
+    border:2px solid lightblue;
+}
+.days{
+    border:1px solid lightblue;
+    width:24.563rem;
+    height:12.45rem;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+}
+.footer{
+display:flex;
+justify-content: space-between;
+background-color:lightblue;
+}
+.btn{
+    border:none;
+    background-color: lightblue;
+    cursor:pointer;
+    font-weight: bold;
+}
+.reset:hover{
+    background-color:red;
+    color:white;
+    font-weight: 700;
+}
+.add-field{
+    width:1.25rem;
+    position:absolute;
+    bottom:2px;
+    background-color:transparent;
+}
+
+.notes-container{
+    border:5px solid lightblue;
+}
+.notes-container > h3{
+    text-align: center;
+}
+/* .monday{
+    border:1px solid lightblue;
+    width:24.563rem;
+    height:12.5rem;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+} */
+.monday-input:hover{
+    background-color:red;
+    cursor: pointer;
+    color:white;
+}
+
+.notesSubmited{
+border: 2px solid black;
+width: 36.85rem;
+height: 49em;
+overflow: hidden;
+overflow: auto;
+}
+.p-text-notes{
+    margin-left:2%;
+    margin-top:0;
+    
+}
+.submit-btn2{
+    margin-top:2.5%;
+    margin-left:6%;
+    display:none;
+}
+
+@media only screen and (max-width: 768px) and (orientation : portrait){
+  .mainContainer{
+     flex-direction: column;
+     align-items: center;
+  }
+  .notes-container{
+      margin:3% 0 0 -1%;
+      width: 23rem;
+  }
+  .notesSubmited{
+      width: 22.3rem;
+  }
+  .week-days{
+      flex-direction: column;
+      width:22.5rem
+  }
+  .header-list{
+      flex-direction:column;
+      width: 22.5rem;
+  }
+  .main-list{
+      width:23rem;
+      margin-left:-1%;
+  }
+  .header-list > h2{
+      text-align: center;
+      width: 22.5rem;
+  }
+  .header-list2{
+   width:21.6rem;
+   justify-content: space-around;
+   align-items: center;
+  }
+  .header-list2 > p{
+      font-size:4.2vw;
+      font-weight: 700;
+  }
+  .monday-input:hover{
+      background-color:red;
+  }
+  .days{
+      width: 22.5rem;
+  }
+  .left-container,.right-container{
+      width:22.5rem;
+  }
+  .text-input-monday,
+  .text-input-tuesday,
+  .text-input-wednesday,
+  .text-input-thursday,
+  .text-input-friday,
+  .text-input-saturday,
+  .text-input-sunday{
+      width:22.15rem;
+  }
+  
+}

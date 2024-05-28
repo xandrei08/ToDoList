@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="mainContainer">
+    <div class="main-list">
+        <div class="header-list">
+            <h2> Weekly Planner</h2>
+            <div class="header-list2">
+            <p> Weak of:</p>
+            <input type="text/number" class="week-input">
+            </div>
+        </div>
+        <div class="week-days">
+            <div class="left-container">
+                <div class="monday days">
+                 Monday:
+                 <input type="text" placeholder="add your note" class="text-input-monday" maxlength="40">
+                 <!-- <button class="submit-btn1" onclick="clickMe()"> Submit</button> -->
+                </div>
+                <div class="days tuesday">
+                Tuesday:
+                <input type="text" placeholder="add your note" class="text-input-tuesday" maxlength="40">
+                </div>
+                <div class="days wednesday">
+                  Wednesday:
+                  <input type="text" placeholder="add your note" class="text-input-wednesday" maxlength="40">
+                </div>
+                <div class="days thursday">
+                    Thursday:
+                    <input type="text" placeholder="add your note" class="text-input-thursday" maxlength="40">
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="days friday">
+                    Friday:
+                    <input type="text" placeholder="add your note" class="text-input-friday" maxlength="40">
+                </div>
+                <div class="days saturday">
+                    Saturday:
+                    <input type="text" placeholder="add your note" class="text-input-saturday" maxlength="40">
+                </div>
+                <div class="days sunday">
+                    Sunday:
+                    <input type="text"placeholder="add your note" class="text-input-sunday" maxlength="40"> 
+                </div>
+                <div class="days extra-notes">
+                    Notes:
+                    <input type="text" placeholder="add your note" class="text-input-notes" maxlength="40">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="reset btn">Reset</button>
+        </div>
+    </div>
+    <div class="notes-container">
+     <h3> More Notes</h3>
+     <div class="notesSubmited" contenteditable="true" placeholder=" type your notes here">
+
+     </div>
+     <button class="submit-btn2"> Submit </button>
+    </div>
+</div>
+    <script src="todo.js"></script>
+</body>
+</html>
